@@ -6,14 +6,15 @@ metadata:
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
+kind: RoleBinding
 metadata:
-  name: sa-dev-view
+  name: ken-view
+  namespace: dev
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: view
 subjects:
 - kind: ServiceAccount
   name: ken
   namespace: dev
-roleRef:
-  kind: ClusterRole
-  name: view
-  apiGroup: ""
