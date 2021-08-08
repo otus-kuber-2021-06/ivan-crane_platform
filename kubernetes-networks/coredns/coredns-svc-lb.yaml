@@ -4,6 +4,7 @@ metadata:
   annotations: 
     metallb.universe.tf/allow-shared-ip: shared
   name: coredns-svc-lb-tcp
+  namespace: kube-system
 spec:
   ports:
   - name: dns-tcp
@@ -24,6 +25,7 @@ metadata:
   annotations:
     metallb.universe.tf/allow-shared-ip: shared
   name: coredns-svc-lb-udp
+  namespace: kube-system
 spec:
   ports:
   - name: dns-udp
