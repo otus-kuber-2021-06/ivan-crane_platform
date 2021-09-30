@@ -1,0 +1,3 @@
+[submodule "kubernetes-templating/kubecfg/kube-libsonnet"]
+	path = kubernetes-templating/kubecfg/kube-libsonnet
+	url = https://github.com/bitnami-labs/kube-libsonnet
